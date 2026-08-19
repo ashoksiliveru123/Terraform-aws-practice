@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Update packages
+dnf update -y
+
+# Install MySQL client
+dnf install mariadb105 -y
+
+# Verify installation
+mysql --version
